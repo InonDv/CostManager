@@ -43,11 +43,6 @@ const costItemSchema = new mongoose.Schema({
 		},
 	},
 
-	id: {
-		type: Number,
-		default: new Date().getTime(),
-	},
-
 	description: {
 		type: String,
 		required: [true, 'Insert description!'],
@@ -71,6 +66,8 @@ const costItemSchema = new mongoose.Schema({
 		min: 0,
 	},
 });
+
+costItemSchema.plugin(AutoIncrement, { inc_field: 'id' });
 
 const costItem = mongoose.model('Costs', costItemSchema);
 export default costItem;
