@@ -3,7 +3,9 @@
 //2. Orel Shabat, id: 208353389
 
 import mongoose from 'mongoose';
-import categories from '../categories.js';
+import AutoIncrementFactory from 'mongoose-sequence';
+
+const AutoIncrement = AutoIncrementFactory(mongoose);
 
 //Deal with day overflow
 function checkValidDay(year, month, day) {
