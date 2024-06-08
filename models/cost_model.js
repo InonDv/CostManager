@@ -45,7 +45,7 @@ const costItemSchema = new mongoose.Schema({
 
 	id: {
 		type: Number,
-		default: Date.now(),
+		default: new Date().getTime(),
 	},
 
 	description: {
