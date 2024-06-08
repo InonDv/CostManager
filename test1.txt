@@ -1,0 +1,25 @@
+localhost:8000
+
+testing getting the about
+-------------------------
+problem
+No connection adapters were found for 'localhost:8000/about/'
+
+
+testing getting the report - 1
+------------------------------
+problem
+No connection adapters were found for 'localhost:8000/report/?user_id=123123&year=2023&month=3'
+
+
+testing adding cost
+-------------------
+problem
+No connection adapters were found for 'localhost:8000/addcost/'
+
+
+testing getting the report - 1
+------------------------------
+problem
+No connection adapters were found for 'localhost:8000/report/?user_id=123123&year=2024&month=4'
+
